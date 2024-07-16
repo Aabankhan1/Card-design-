@@ -1,0 +1,140 @@
+@font-face {
+    font-family: bubble;
+    src: url(blog-preview-card-main/assets/fonts/static/Figtree-ExtraBold.ttf);
+   
+}
+@font-face {
+    font-family: semi-bold;
+    src: url(blog-preview-card-main/assets/fonts/static/Figtree-SemiBold.ttf);
+}
+@font-face {
+    font-family: Extra-bold;
+    src: url(blog-preview-card-main/assets/fonts/static/Figtree-ExtraBold.ttf);
+}
+:root{
+     --yellow: #FFFF00;
+     --white:  #FFFFFF;
+     --dark-yellow: #F4D04E;
+     --grey: #808080;
+    
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-yellow);
+}
+.main{ 
+     background-color: var(--white);
+     width: 384px;
+     height: 522px;
+     border: 2px solid black;
+     border-radius: 22px;       
+     box-shadow: 7px 7px black ;
+}
+.main:active{
+    box-shadow: 17px 17px black ;
+}
+h2:active{ 
+    color: var(--dark-yellow);
+}
+.image{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 20px;
+    
+}
+.image img{
+     width: 336px;
+     height: 200px;
+     border: 2px solid transparent;
+     border-radius: 10px;
+}
+.content-box{
+     padding-left: 26px;
+     padding-top: 20px;
+}
+.btn{
+    font-family: 'bubble';
+    font-weight: bolder;
+    font-size: 18px;
+    background-color: var(--dark-yellow);
+    width: 99px;
+    height: 34px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+.first-parah{ 
+    font-family: 'semi-bold';
+}
+.content-box h2{
+      font-family: 'Extra-bold';
+    
+}
+.sec-parah{
+     font-family: 'semi-bold';
+     color:var(--grey) ;
+}
+.content-box img{ 
+    width: 32px;
+    height: 32px;
+}
+span{ 
+    font-family: 'Extra-bold';
+    position: relative;
+    bottom: 10px;
+    left: 5px;
+}
+@media (min-width: 330px) and (max-width: 700px){
+    body, html {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+     .main{ 
+        width: 321px;
+        height: 480px;
+     }
+     .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+     }
+     .image img{
+         width: 279px;
+         height: 200px;
+         position: relative;
+         bottom: 10px;    
+     }
+     .btn{ 
+        width: 73px;
+        height: 26px;
+        font-size: 12px;
+        position: relative;
+        bottom: 25px;
+     }
+     .first-parah{
+         font-size: 12px;
+         position: relative;
+         bottom: 20px;
+     }
+     h2{
+         font-size: 20px;
+         position: relative;
+         bottom: 20px;
+     }
+     .sec-parah{ 
+        font-size: 14px;
+        position: relative;
+        bottom: 20px;
+     }
+     .sec-parah img{
+         width: 32px;
+         height: 32px;
+     }
+    }
